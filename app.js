@@ -1,62 +1,28 @@
-// LET CONST VAR
+// PRIMITIVE TYPE
 
-// var nme = 'John Doe';
-// console.log(nme);
-// nme = 'brad traversy';
-// console.log(nme);
+// String
+const name = 'John Doe';
+// Numbers
+const age = 30;
+// Boolean
+const hasKids = false;
+// Null
+const car = null;
+// Undefined
+let salary;
+// Symbol
+const sym = Symbol();
 
-// // Var INIT
+// REFERENCE TYPE
 
-// var greeting;
-// console.log(greeting);
-// greeting = '123';
-// console.log(greeting);
+// Array
+const hobbies = ['movies', 'music', 'swim'];
+// Object Literals
 
-// // var can be write letters, Numbers, _underscore, $moneysign
-// // Cannot start with number
-
-// var working = 'No';
-// console.log(working);
-
-// var _working = 'no';
-// console.log(_working);
-
-// var $working = 'No';
-// console.log($working);
-
-// // var 1working = "no";
-// // console.log(1working);
-
-// // Multi word Var
-
-// var firstName = 'john Doe'; //Camel case
-// var first_name = 'sara'; //Underscore
-// var FirstName = 'don jay'; //Pascal case
-// console.log(FirstName);
-
-// // LET
-// let nme;
-// nme = 'John Doe';
-// console.log(nme);
-// nme = 'brad traversy';
-// console.log(nme);
-
-// CONST
-
-const nme = 'john doe';
-// nme = 'sara'; //cannot re-assign to const
-console.log(nme);
-
-const address = {
-  house_no: 50,
-  location: 'delhi',
-  country: 'india',
+const emp = {
+  name: 'meenu',
+  working: 'front-end',
 };
+const today = new Date();
 
-address.location = 'mumbai'; //Reassign value in it. but not that variable name
-console.log(address);
-
-const number = [1, 2, 3, 4, 5, 6];
-number.push(7);
-
-console.log(number);
+console.log(typeof today);
