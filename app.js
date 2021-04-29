@@ -1,25 +1,35 @@
-// Numbers & math object
+// TYPE CONVERSION
 
-const num1 = 130;
-const num2 = 30;
+// Number to String - String fx()
 let val;
+val = String(5);
+val = String(4 + 4);
 
-val = num1 + num2;
-val = num1 - num2;
-val = num1 * num2;
-val = num1 / num2;
-val = num1 % num2;
+// Boolean to String
+val = String(true);
 
-val = Math.PI;
-val = Math.E;
-val = Math.round(2.4);
-val = Math.ceil(2.3);
-val = Math.floor(2.8);
-val = Math.sqrt(64);
-val = Math.abs(-6);
-val = Math.pow(8, 3);
-val = Math.min(5, 7, 89, 25, 43, 0, 8, 65);
-val = Math.max(5, 7, 89, 25, 43, 0, 8, 65);
-val = Math.ceil(200000 * Math.random());
+// Date to string
+val = String(new Date());
+
+// Array to string
+val = String([5, 8, 14, 55, 22, 26, 0, 4]);
+
+// toString method
+val = (5).toString();
+val = false.toString();
+
+// String to Number
+val = Number('5');
+val = Number('Hello-World');
+val = Number(true);
+val = Number(false);
+val = Number(null);
+val = Number([1, 8, 5, 4, 6, 12, 28]);
+
+val = parseInt('hello world');
+val = parseInt('100.20');
+val = parseFloat('100.20');
 
 console.log(val);
+console.log(typeof val);
+console.log(val.toFixed(3));
