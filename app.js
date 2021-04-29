@@ -1,35 +1,63 @@
-// TYPE CONVERSION
+// String Methods & Concatenation
 
-// Number to String - String fx()
-let val;
-val = String(5);
-val = String(4 + 4);
+const firstName = 'William';
+const lastName = 'Johnson';
+const age = 20;
 
-// Boolean to String
-val = String(true);
+//concatenation
+val = firstName + ' ' + lastName;
 
-// Date to string
-val = String(new Date());
+// Append
+val = 'brad ';
+val += 'traversy';
+val = 'Hello, my name is ' + firstName + " and i'am " + age;
 
-// Array to string
-val = String([5, 8, 14, 55, 22, 26, 0, 4]);
+// Escaping
+val = "That's awsm and I can't wait"; //"That\'s nice I can\'t wait";
 
-// toString method
-val = (5).toString();
-val = false.toString();
+// Length
+val = firstName.length;
 
-// String to Number
-val = Number('5');
-val = Number('Hello-World');
-val = Number(true);
-val = Number(false);
-val = Number(null);
-val = Number([1, 8, 5, 4, 6, 12, 28]);
+// Concate
+val = firstName.concat(' ', lastName);
 
-val = parseInt('hello world');
-val = parseInt('100.20');
-val = parseFloat('100.20');
+// Change case
+val = firstName.toUpperCase();
+val = firstName.toLowerCase();
+
+// count string to array
+val = firstName[2];
+
+// indexOf()
+val = firstName.indexOf('h');
+val = firstName.lastIndexOf('h');
+
+//CharAt()
+val = firstName.charAt('2');
+
+// Get last character()
+val = firstName.charAt(firstName.length - 1);
+
+// Substring()
+val = firstName.substring(1, 4);
+
+// Slice()
+val = firstName.slice(1, 5); //same as substring in that case
+val = firstName.slice(-3); //start from last
+
+// Splite()
+val = firstName.split(''); //Splite each of the character
+
+let str = "hello world I'am brad traversy";
+val = str.split(' ');
+
+let str1 = 'web design,web developer,digital marketing ';
+val = str1.split(',');
+
+// Replace
+val = str.replace('brad', 'a online instructor'); //replace something from the string
+
+// Include
+val = str.includes('brad'); // to check is this exist in the selected string
 
 console.log(val);
-console.log(typeof val);
-console.log(val.toFixed(3));
