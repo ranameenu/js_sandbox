@@ -1,25 +1,43 @@
-let val;
+const color = 'pink';
 
-const today = new Date();
+switch (color) {
+  case 'red':
+    console.log('red');
+    break;
+  case 'blue':
+    console.log('blue');
+    break;
+  case 'green':
+    console.log('green');
+    break;
+  default:
+    console.log('yellow');
+}
 
-val = today;
-val = String(today);
-val = today.toString();
+let day;
 
-const birthday = new Date('19 aug 1991 09:20:00 PM');
+switch (new Date().getDay()) {
+  case 0:
+    day = 'Sunday';
+    break;
+  case 1:
+    day = 'Monday';
+    break;
+  case 2:
+    day = 'Tuesday';
+    break;
+  case 3:
+    day = 'Wednesday';
+    break;
+  case 4:
+    day = 'Thrusday';
+    break;
+  case 5:
+    day = 'Friday';
+    break;
+  case 6:
+    day = 'Saturday';
+    break;
+}
 
-val = birthday.getMonth();
-val = birthday.getDate();
-val = birthday.getFullYear();
-val = birthday.getDay();
-val = birthday.getHours();
-val = birthday.getMinutes();
-val = birthday.getSeconds();
-val = birthday.getMilliseconds();
-val = birthday.getTime();
-
-// SET METHOD TO SET ANY THING IN DATE OBJECT
-val = birthday.setMonth(2);
-val = birthday.getMonth();
-
-console.log(val);
+console.log(day);
