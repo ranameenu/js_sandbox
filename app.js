@@ -1,50 +1,25 @@
-const person = {
-  firstName: 'steve',
-  lastName: 'smith',
-  age: 30,
-  email: 'steve@aol.com',
-  hobbies: ['movies', 'music', 'swimming', 'sports'],
-  address: {
-    city: 'Miami',
-    state: 'FL',
-  },
-  getBirthYear: function (current) {
-    return current - this.age;
-  },
-};
-
 let val;
 
-val = person.firstName;
-val = person['firstName'];
-val = person.age;
-val = person.hobbies;
-val = person.address;
-val = person.getBirthYear('1988');
-val = person.hobbies[1];
-val = person.address.city;
-val = person.getBirthYear('2021');
+const today = new Date();
+
+val = today;
+val = String(today);
+val = today.toString();
+
+const birthday = new Date('19 aug 1991 09:20:00 PM');
+
+val = birthday.getMonth();
+val = birthday.getDate();
+val = birthday.getFullYear();
+val = birthday.getDay();
+val = birthday.getHours();
+val = birthday.getMinutes();
+val = birthday.getSeconds();
+val = birthday.getMilliseconds();
+val = birthday.getTime();
+
+// SET METHOD TO SET ANY THING IN DATE OBJECT
+val = birthday.setMonth(2);
+val = birthday.getMonth();
 
 console.log(val);
-
-const people = [
-  {
-    name: 'mike',
-    age: 29,
-    job: 'developer',
-  },
-  {
-    name: 'john',
-    age: 35,
-    job: 'front-end-developer',
-  },
-  {
-    name: 'brad',
-    age: 36,
-    job: 'engineer',
-  },
-];
-
-for (i = 0; i < people.length; i++) {
-  console.log(people[i].name);
-}
