@@ -1,86 +1,66 @@
-// function greet() {
-//   return 'hello';
+// // FOR LOOP
+
+// for (let i = 0; i < 10; i++) {
+//   if (i === 5) {
+//     console.log(i + ' is my favourite Number');
+//     continue; //continue stop the current iteration and allow to next iteration
+//   }
+//   if (i === 7) {
+//     console.log('Stop the loop');
+//     break; // break stop the looping after the current iteration
+//   }
+
+//   console.log('Number ' + i);
 // }
 
-// function info(firstName, lastName) {
-//   return 'hello ' + firstName + ' ' + lastName;
-// }
-// console.log(info('john', 'doe'));
+// // WHILE LOOP
 
-// // IF ARGUMENT NOT DEFINE AT THE TIME OF CALL
-// function info(firstName, lastName) {
-//   if (typeof firstName === 'undefined') {
-//     firstName = 'john';
-//   }
-//   if (typeof lastName === 'undefined') {
-//     lastName = 'Doe';
-//   }
-//   return 'Hello ' + firstName + ' ' + lastName;
+// let i = 0;
+
+// while (i < 10) {
+//   console.log('Number ' + i);
+//   i++;
 // }
 
-// console.log(info());
+// // DO WHILE
 
-// // ARGUMENT PASSING IN CALL WILL OVERRIDE
-// function info(firstName, lastName) {
-//   if (typeof firstName === 'undefined') {
-//     firstName = 'john';
-//   }
-//   if (typeof lastName === 'undefined') {
-//     lastName = 'Doe';
-//   }
-//   return 'Hello ' + firstName + ' ' + lastName;
+// let i = 0;
+
+// do {
+//   console.log('Number ' + i);
+//   i++;
+// } while (i < 10);
+
+// LOOP THROUGH ARRAY
+// const cars = ['honda', 'toyota', 'audi', 'BMW'];
+
+// for (i = 0; i < 4; i++) {
+//   console.log(cars[i]);
 // }
 
-// console.log(info('steve', 'smith'));
+fruits = ['Apple', 'Mango', 'Banana', 'Orange', 'Grapes'];
 
-// // IN ES6 Can directly pass with the argument
-// function info(firstName = 'John', lastName = 'Doe') {
-//   return 'Hello ' + firstName + ' ' + lastName;
-// }
+// FOR EACH
+fruits.forEach(function (fruit, index, array) {
+  console.log(`${index}` + ' ' + fruit + ' ' + array);
+});
 
-// console.log(info());
-
-// // FUNCTION EXPRESSIONS
-// const sqr = function (x) {
-//   return x * x;
-// };
-
-// console.log(sqr(8));
-
-// //IIFE - Immediate invoke function expression
-// (function () {
-//   console.log('IIF Expression');
-// })();
-
-// (function (name) {
-//   console.log('Hello ' + name);
-// })('brad');
-
-// // FUNCTION INSIDE THE IIFS
-// (function () {
-//   function sum() {
-//     console.log('john');
-//   }
-//   sum();
-//   console.log('Hello');
-// })();
-
-// // PROPERTY OBJECT
-// // when a function put inside the object is called method
-
-// const todo = {
-//   add: function () {
-//     console.log('Add Todo...');
+// // MAP
+// const users = [
+//   {
+//     id: 1,
+//     name: 'Sara',
 //   },
-//   edit: function (id) {
-//     console.log(`The id is ${id}`);
+//   {
+//     id: 2,
+//     name: 'John',
 //   },
-// };
-// todo.add();
-// todo.edit(5);
-
-// todo.delete = function () {
-//   //we can append the object by adding the function poutside the object todo
-//   console.log('delete this function');
-// };
-// todo.delete();
+//   {
+//     id: 3,
+//     name: 'Karen',
+//   },
+// ];
+// const ids = users.map(function (user) {
+//   return user.id;
+// });
+// console.log(ids);
