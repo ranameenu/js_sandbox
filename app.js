@@ -1,43 +1,86 @@
-const color = 'pink';
+// function greet() {
+//   return 'hello';
+// }
 
-switch (color) {
-  case 'red':
-    console.log('red');
-    break;
-  case 'blue':
-    console.log('blue');
-    break;
-  case 'green':
-    console.log('green');
-    break;
-  default:
-    console.log('yellow');
-}
+// function info(firstName, lastName) {
+//   return 'hello ' + firstName + ' ' + lastName;
+// }
+// console.log(info('john', 'doe'));
 
-let day;
+// // IF ARGUMENT NOT DEFINE AT THE TIME OF CALL
+// function info(firstName, lastName) {
+//   if (typeof firstName === 'undefined') {
+//     firstName = 'john';
+//   }
+//   if (typeof lastName === 'undefined') {
+//     lastName = 'Doe';
+//   }
+//   return 'Hello ' + firstName + ' ' + lastName;
+// }
 
-switch (new Date().getDay()) {
-  case 0:
-    day = 'Sunday';
-    break;
-  case 1:
-    day = 'Monday';
-    break;
-  case 2:
-    day = 'Tuesday';
-    break;
-  case 3:
-    day = 'Wednesday';
-    break;
-  case 4:
-    day = 'Thrusday';
-    break;
-  case 5:
-    day = 'Friday';
-    break;
-  case 6:
-    day = 'Saturday';
-    break;
-}
+// console.log(info());
 
-console.log(day);
+// // ARGUMENT PASSING IN CALL WILL OVERRIDE
+// function info(firstName, lastName) {
+//   if (typeof firstName === 'undefined') {
+//     firstName = 'john';
+//   }
+//   if (typeof lastName === 'undefined') {
+//     lastName = 'Doe';
+//   }
+//   return 'Hello ' + firstName + ' ' + lastName;
+// }
+
+// console.log(info('steve', 'smith'));
+
+// // IN ES6 Can directly pass with the argument
+// function info(firstName = 'John', lastName = 'Doe') {
+//   return 'Hello ' + firstName + ' ' + lastName;
+// }
+
+// console.log(info());
+
+// // FUNCTION EXPRESSIONS
+// const sqr = function (x) {
+//   return x * x;
+// };
+
+// console.log(sqr(8));
+
+// //IIFE - Immediate invoke function expression
+// (function () {
+//   console.log('IIF Expression');
+// })();
+
+// (function (name) {
+//   console.log('Hello ' + name);
+// })('brad');
+
+// // FUNCTION INSIDE THE IIFS
+// (function () {
+//   function sum() {
+//     console.log('john');
+//   }
+//   sum();
+//   console.log('Hello');
+// })();
+
+// // PROPERTY OBJECT
+// // when a function put inside the object is called method
+
+// const todo = {
+//   add: function () {
+//     console.log('Add Todo...');
+//   },
+//   edit: function (id) {
+//     console.log(`The id is ${id}`);
+//   },
+// };
+// todo.add();
+// todo.edit(5);
+
+// todo.delete = function () {
+//   //we can append the object by adding the function poutside the object todo
+//   console.log('delete this function');
+// };
+// todo.delete();
