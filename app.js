@@ -1,66 +1,62 @@
-// // FOR LOOP
+// WINDOWS OBJECT / METHOD / PROPERTIES
 
-// for (let i = 0; i < 10; i++) {
-//   if (i === 5) {
-//     console.log(i + ' is my favourite Number');
-//     continue; //continue stop the current iteration and allow to next iteration
-//   }
-//   if (i === 7) {
-//     console.log('Stop the loop');
-//     break; // break stop the looping after the current iteration
-//   }
+// // Alert
+// alert(123);
 
-//   console.log('Number ' + i);
+// // Prompt
+// prompt(); without the alert following prompt
+
+// // Prompt with Alert
+// const input = prompt();
+// alert(input);
+
+// // Confirm
+
+// if (confirm('Are you sure')) {
+//   console.log('yes');
+// } else {
+//   console.log('no');
 // }
 
-// // WHILE LOOP
+let val;
 
-// let i = 0;
+// Outer width & height
+val = window.outerHeight;
+val = window.outerWidth;
 
-// while (i < 10) {
-//   console.log('Number ' + i);
-//   i++;
-// }
+// Inner Height & Width
+val = window.innerHeight;
+val = window.innerWidth;
 
-// // DO WHILE
+// Scroll Points
+val = window.scrollY;
+val = window.scrollX;
 
-// let i = 0;
+// Location Object
+val = window.location;
+val = window.location.hostname;
+val = window.location.pathname;
+val = window.location.origin;
+val = window.location.port;
+val = window.location.protocol;
 
-// do {
-//   console.log('Number ' + i);
-//   i++;
-// } while (i < 10);
+// // Redirect
+// window.location.href = 'https://google.com'; // It will redirect your web page to that URL
 
-// LOOP THROUGH ARRAY
-// const cars = ['honda', 'toyota', 'audi', 'BMW'];
+// // Reload
+// window.location.reload(); It will continuously reload our window
 
-// for (i = 0; i < 4; i++) {
-//   console.log(cars[i]);
-// }
+// // History
+// window.history.go(-1);
+val = window.history.length;
 
-fruits = ['Apple', 'Mango', 'Banana', 'Orange', 'Grapes'];
-
-// FOR EACH
-fruits.forEach(function (fruit, index, array) {
-  console.log(`${index}` + ' ' + fruit + ' ' + array);
-});
-
-// // MAP
-// const users = [
-//   {
-//     id: 1,
-//     name: 'Sara',
-//   },
-//   {
-//     id: 2,
-//     name: 'John',
-//   },
-//   {
-//     id: 3,
-//     name: 'Karen',
-//   },
-// ];
-// const ids = users.map(function (user) {
-//   return user.id;
-// });
-// console.log(ids);
+// Navigator Object
+val = window.navigator;
+val = window.navigator.appCodeName;
+val = window.navigator.appName;
+val = window.navigator.onLine;
+val = window.navigator.cookieEnabled;
+val = window.navigator.platform;
+val = window.navigator.userAgent;
+val = window.navigator.geolocation;
+console.log(val);
